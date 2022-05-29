@@ -34,30 +34,33 @@ Widget build(BuildContext context) {
         ),
 
       ),
-        Positioned(
+        Positioned.fill(
             top:MediaQuery.of(context).size.height*0.9,
-            left:MediaQuery.of(context).size.height*0.11,
           child:
-        Column(
-          crossAxisAlignment: CrossAxisAlignment.center,
-            mainAxisSize: MainAxisSize.min,
-            children: <Widget>[
-              UnicornOutlineButton(
-                strokeWidth: 2.0,
-                radius: 24.0,
-                gradient: LinearGradient(colors: [Colors.black, Colors.redAccent]),
-                child: Text('Get Started', style: TextStyle(fontSize: 16.0)),
-                onPressed: () {Navigator.pushReplacement(
-                  context,
-                  MaterialPageRoute(builder: (context) => Accueil()),
-                );
-                },
-              ),
+        Align(
+          alignment: Alignment.center,
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.center,
+              mainAxisSize: MainAxisSize.min,
+              children: <Widget>[
+                UnicornOutlineButton(
+                  strokeWidth: 2.0,
+                  radius: 24.0,
+                  gradient: LinearGradient(colors: [Colors.black, Colors.redAccent]),
+                  child: Text('Get Started', style: TextStyle(fontSize: 16.0)),
+                  onPressed: () {Navigator.pushReplacement(
+                    context,
+                    MaterialPageRoute(builder: (context) => Accueil()),
+                  );
+                  },
+                ),
 
-            ]),
+              ]),
+        ),
         ),
       ],
     ),
+
 
 
 

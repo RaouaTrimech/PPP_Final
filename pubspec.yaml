@@ -57,7 +57,9 @@ dev_dependencies:
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
   flutter_lints: ^1.0.0
-
+  confetti: ^0.6.0
+  equatable: ^1.2.6
+  flutter_icons: ^1.1.0
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
 
@@ -68,6 +70,10 @@ flutter:
    - assets/Screen2/Oval1.png
    - assets/Screen2/Oval2.png
    - assets/Accueil/
+   - assets/Games_Assets/MemoGame_Assets/
+   - assets/Games_Assets/TicTacToeGame_Assets/
+   - assets/Games_Assets/SudokuGame_Assets/
+   - assets/Games_Assets/gamesBackground.png
    - assets/
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in

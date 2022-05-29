@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:tab_indicator_styler/tab_indicator_styler.dart';
 
 import '../calender/calender_screen.dart';
+import '../mind_games/redirectGames.dart';
 class Accueil extends StatefulWidget{
   @override
   _AccueilState createState() => _AccueilState();
@@ -55,7 +56,7 @@ class _AccueilState extends State<Accueil> with SingleTickerProviderStateMixin{
                   Tab(child:Text("Notes",style: TextStyle(fontFamily: "Spartan",fontWeight: FontWeight.w700,fontSize: 16),)),
                   Tab(child:Text("Calendar",style: TextStyle(fontFamily: "Spartan",fontWeight: FontWeight.w700,fontSize: 16))),
                   Tab(child:Text("Timer",style: TextStyle(fontFamily: "Spartan",fontWeight: FontWeight.w700,fontSize: 16))),
-                  Tab(child:Text("Music",style: TextStyle(fontFamily: "Spartan",fontWeight: FontWeight.w700,fontSize: 16))),
+                  Tab(child:Text("Games",style: TextStyle(fontFamily: "Spartan",fontWeight: FontWeight.w700,fontSize: 16))),
                 ],
               ),
             ),
@@ -65,7 +66,7 @@ class _AccueilState extends State<Accueil> with SingleTickerProviderStateMixin{
               Note(),
               CalenderScreen(),
               FocusTimer(),
-              Icon(Icons.directions_bike),
+              RedirectGames(),
             ],
           ),
         ),
