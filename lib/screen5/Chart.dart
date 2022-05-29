@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class Chart extends StatelessWidget {
@@ -12,8 +11,8 @@ class Chart extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           Container(
-            margin: EdgeInsets.fromLTRB(0,20.0,0,10.0),
-            decoration: BoxDecoration(
+            margin: const EdgeInsets.fromLTRB(0,20.0,0,10.0),
+            decoration: const BoxDecoration(
               color: Color.fromRGBO(43, 48, 62, 1),
               borderRadius: BorderRadius.all(Radius.circular(50.0)) ,
             ),
@@ -24,8 +23,8 @@ class Chart extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 Container(
-                  margin: EdgeInsets.fromLTRB(0, 0, 0, 4),
-                  decoration: BoxDecoration(
+                  margin: const EdgeInsets.fromLTRB(0, 0, 0, 4),
+                  decoration: const BoxDecoration(
                     gradient: LinearGradient(
                       begin:  Alignment.topRight ,
                       end: Alignment.bottomLeft ,
@@ -40,7 +39,7 @@ class Chart extends StatelessWidget {
                   height: 40.0,
                 ),
                 Container(
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     gradient: LinearGradient(
                       begin:  Alignment.topRight ,
                       end: Alignment.bottomLeft ,
@@ -58,7 +57,7 @@ class Chart extends StatelessWidget {
             ),
           ),
           Container(
-            child: Text(
+            child: const Text(
               'Mon',
               style:TextStyle(
                 fontFamily: 'Urbanist',

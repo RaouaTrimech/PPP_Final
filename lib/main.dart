@@ -1,7 +1,12 @@
 // ignore_for_file: prefer_const_constructors
 
-import 'package:example/Screen2.dart';
+import 'package:example/Onboarding.dart';
+import 'package:example/calender/EventProvider.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+
+import 'calender/calender_screen.dart';
+
 
 void main() {
   runApp(const MyApp());
@@ -12,12 +17,20 @@ class MyApp extends StatelessWidget {
 
   // This widget is the root of your application.
   @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Focus App',
-      home: Screen2(),
-    );
-  }
+  Widget build(BuildContext context) => ChangeNotifierProvider(
+      create: (context) => EventProvider(),
+      child:  MaterialApp(
+    title: 'Focus App',
+    themeMode: ThemeMode.dark,
+    darkTheme: ThemeData.dark().copyWith(
+      accentColor: Colors.white,
+      primaryColor: Color.fromRGBO(244, 71, 113, 1),
+      colorScheme: ColorScheme.fromSwatch().copyWith(secondary: Color.fromRGBO(43, 48, 62, 1)),
+    ),
+    home: Onboarding(),
+  ),
+  );
+
 }
 
 /* void main() {

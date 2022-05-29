@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class TimerFocus extends StatefulWidget {
@@ -13,7 +12,7 @@ class _TimerFocusState extends State<TimerFocus> {
   Widget build(BuildContext context) {
     return Center(
       child: Column(
-        children: [
+        children: const [
           Text("Let's focus for"),
           CircularProgressIndicator(
             color: Color.fromRGBO(43, 48, 62, 1) ,

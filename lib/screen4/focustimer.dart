@@ -1,4 +1,3 @@
-import 'dart:async';
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -41,7 +40,7 @@ class _FocusTimerState extends State<FocusTimer>
     // Create a fling animation effect using a physics simulation.
     controller = AnimationController(
         vsync: this ,
-        duration: Duration(seconds: 60) ,
+        duration: const Duration(seconds: 60) ,
     );
 
     //this fonction runs everytime the AnimationController value changes
@@ -81,7 +80,7 @@ class _FocusTimerState extends State<FocusTimer>
              height: 39.5,
              minWidth: 137.0,
              //StadiumBorder() ;
-             shape: StadiumBorder(
+             shape: const StadiumBorder(
                side: BorderSide(
                    color: Color.fromRGBO(244, 71, 113, 1), width: 2),
              ),
@@ -95,7 +94,7 @@ class _FocusTimerState extends State<FocusTimer>
                    from: controller.value == 0 ? 1.0 : controller.value
                );
              },
-             child: Text(
+             child: const Text(
                'Start',
                style: TextStyle(
                  color: Colors.white,
@@ -114,13 +113,13 @@ class _FocusTimerState extends State<FocusTimer>
          children: [
            //Play Pause Button
            FlatButton.icon(
-             icon: isPlaying == true?Icon(Icons.pause_circle_outline , color: Colors.white,):Icon(Icons.play_arrow_outlined ,color: Colors.white,),
+             icon: isPlaying == true?const Icon(Icons.pause_circle_outline , color: Colors.white,):const Icon(Icons.play_arrow_outlined ,color: Colors.white,),
              minWidth: 120,
              color: Colors.transparent,
              //StadiumBorder() ;
              shape: RoundedRectangleBorder(
                borderRadius : BorderRadius.circular(50.0),
-               side: BorderSide(
+               side: const BorderSide(
                    color: Color.fromRGBO(244, 71, 113, 1), width: 2),
              ),
              onPressed: () {
@@ -144,7 +143,7 @@ class _FocusTimerState extends State<FocusTimer>
              },
              label: Text(
                isPlaying == true?'Pause':'Resume',
-               style: TextStyle(
+               style: const TextStyle(
                  color: Colors.white,
                  fontSize: 18,
                  fontFamily: 'Spartan',
@@ -153,18 +152,18 @@ class _FocusTimerState extends State<FocusTimer>
                ),
 
              ),),
-           SizedBox(
+           const SizedBox(
              width: 10.0,
            ),
            //Stop Button
            FlatButton.icon(
-             icon: Icon(Icons.stop_outlined , color: Colors.white,),
+             icon: const Icon(Icons.stop_outlined , color: Colors.white,),
              minWidth: 120,
              color: Colors.transparent,
              //StadiumBorder() ;
              shape: RoundedRectangleBorder(
                borderRadius : BorderRadius.circular(50.0),
-               side: BorderSide(
+               side: const BorderSide(
                    color: Color.fromRGBO(244, 71, 113, 1), width: 2),
              ),
              onPressed: () {
@@ -176,7 +175,7 @@ class _FocusTimerState extends State<FocusTimer>
                });
 
              },
-             label: Text(
+             label: const Text(
                'Stop',
                style: TextStyle(
                  color: Colors.white,
@@ -203,7 +202,7 @@ class _FocusTimerState extends State<FocusTimer>
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text(
+            const Text(
                 "Let's focus",
             style: TextStyle(
               fontFamily: 'Spartan' ,
@@ -212,7 +211,7 @@ class _FocusTimerState extends State<FocusTimer>
               fontSize: 16,
               color: Colors.white,
             ),),
-            SizedBox(
+            const SizedBox(
               height: 30,
             ),
             Stack(
@@ -223,9 +222,9 @@ class _FocusTimerState extends State<FocusTimer>
                     height: 246.42,
                     child: CircularProgressIndicator(
 
-                      color: Color.fromRGBO(244, 71, 113, 1),
+                      color: const Color.fromRGBO(244, 71, 113, 1),
                       strokeWidth: 8,
-                      backgroundColor: Color.fromRGBO(43, 48, 62, 1),
+                      backgroundColor: const Color.fromRGBO(43, 48, 62, 1),
                       value: progress,
 
                     )
@@ -237,11 +236,11 @@ class _FocusTimerState extends State<FocusTimer>
                         context: context,
                         builder: (context) => Container(
 
-                          margin: EdgeInsets.all(20),
-                          padding: EdgeInsets.all(20),
+                          margin: const EdgeInsets.all(20),
+                          padding: const EdgeInsets.all(20),
                           height: 150,
                           child: CupertinoTimerPicker(
-                            backgroundColor: Color.fromRGBO(244, 71, 113, 1),
+                            backgroundColor: const Color.fromRGBO(244, 71, 113, 1),
                               initialTimerDuration: controller.duration!,
                               onTimerDurationChanged: (time) {
                                 setState(() {
@@ -258,7 +257,7 @@ class _FocusTimerState extends State<FocusTimer>
                     //the builder will return the animated widget
                     builder: (context,child) => Text(
                         countText,
-                        style: TextStyle(
+                        style: const TextStyle(
                           color: Colors.white,
                           fontSize: 40,
                           fontFamily: 'Spartan',
@@ -271,7 +270,7 @@ class _FocusTimerState extends State<FocusTimer>
                 ),
               ]
             ),
-            SizedBox(
+            const SizedBox(
               height: 30,
             ),
              showButton ,

@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class ChartState extends StatefulWidget {
@@ -38,8 +37,8 @@ class _ChartStateState extends State<ChartState> {
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           Container(
-            margin: EdgeInsets.fromLTRB(0,20.0,0,10.0),
-            decoration: BoxDecoration(
+            margin: const EdgeInsets.fromLTRB(0,20.0,0,10.0),
+            decoration: const BoxDecoration(
               color: Color.fromRGBO(43, 48, 62, 1),
               borderRadius: BorderRadius.all(Radius.circular(50.0)) ,
             ),
@@ -50,8 +49,8 @@ class _ChartStateState extends State<ChartState> {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 Container(
-                  margin: EdgeInsets.fromLTRB(0, 0, 0, 4),
-                  decoration: BoxDecoration(
+                  margin: const EdgeInsets.fromLTRB(0, 0, 0, 4),
+                  decoration: const BoxDecoration(
                     gradient: LinearGradient(
                       begin:  Alignment.topRight ,
                       end: Alignment.bottomLeft ,
@@ -66,7 +65,7 @@ class _ChartStateState extends State<ChartState> {
                   height: (widget.param1 *1.30),
                 ),
                 Container(
-                  decoration: BoxDecoration(
+                  decoration: const BoxDecoration(
                     gradient: LinearGradient(
                       begin:  Alignment.topRight ,
                       end: Alignment.bottomLeft ,
@@ -86,7 +85,7 @@ class _ChartStateState extends State<ChartState> {
           Container(
             child: Text(
               widget.day,
-              style:TextStyle(
+              style:const TextStyle(
                 fontFamily: 'Urbanist',
                 fontStyle: FontStyle.normal,
                 fontWeight: FontWeight.normal,

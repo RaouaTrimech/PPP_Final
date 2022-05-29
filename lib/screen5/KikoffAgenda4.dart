@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class KikoffAgenda4 extends StatelessWidget {
@@ -7,26 +6,26 @@ class KikoffAgenda4 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.only(left:24,top: 161,right: 24 ),
-      padding: EdgeInsets.fromLTRB(11, 11, 12, 11),
-      decoration: BoxDecoration(
+      margin: const EdgeInsets.only(left:24,top: 161,right: 24 ),
+      padding: const EdgeInsets.fromLTRB(11, 11, 12, 11),
+      decoration: const BoxDecoration(
         color: Color.fromRGBO(43, 48, 62, 1),
         borderRadius: BorderRadius.all(Radius.circular(16.0)) ,
       ),
       width: 327,
       height: 145.0,
       child: Container(
-          decoration: BoxDecoration(
+          decoration: const BoxDecoration(
             color: Color.fromRGBO(24, 26, 32, 1),
             borderRadius: BorderRadius.all(Radius.circular(15.0)) ,
         ),
-        padding: EdgeInsets.only(left:14,top:10),
+        padding: const EdgeInsets.only(left:14,top:10),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           crossAxisAlignment: CrossAxisAlignment.start,
 
           children: [
-            Text(
+            const Text(
                 'Kickoff agenda',
               style:TextStyle(
                 fontFamily: 'Urbanist',
@@ -37,7 +36,7 @@ class KikoffAgenda4 extends StatelessWidget {
                 color: Colors.white,
               ),
             ),
-            Text(
+            const Text(
                 "Remember to include Jean's notes",
               style:TextStyle(
                 fontFamily: 'Spartan',
@@ -51,7 +50,7 @@ class KikoffAgenda4 extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.end,
               crossAxisAlignment: CrossAxisAlignment.center,
-              children: [
+              children: const [
                 Text('9.45 AM - 11.45 AM'),
               ],
             ),

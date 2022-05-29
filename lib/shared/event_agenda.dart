@@ -1,7 +1,7 @@
 import "package:flutter/material.dart";
 import 'package:google_fonts/google_fonts.dart';
 
-/********************** The Event Agenda Widget  ****************************************/
+/// ******************** The Event Agenda Widget  ****************************************/
 class EventAgenda extends StatelessWidget {
   const EventAgenda({
     Key? key,

@@ -1,5 +1,4 @@
 import 'ChartState.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class WeekAdvancement extends StatelessWidget {
@@ -12,8 +11,8 @@ class WeekAdvancement extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-              Padding(
-                padding: const EdgeInsets.only(left: 24.0, top: 10.0/*to modify later on*/),
+              const Padding(
+                padding: EdgeInsets.only(left: 24.0, top: 10.0/*to modify later on*/),
                 child: Text(
                     'The Week Advancement',
                     style:TextStyle(

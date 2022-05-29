@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class MusicPlayer extends StatefulWidget {
@@ -18,7 +17,7 @@ class _MusicPlayerState extends State<MusicPlayer> {
       height: 100,
       child: ElevatedButton.icon(
           onPressed: (){},
-          icon:Icon(Icons.surround_sound_outlined) , label: Text('music')),
+          icon:const Icon(Icons.surround_sound_outlined) , label: const Text('music')),
     );
   }
 }
